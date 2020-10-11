@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #bababa;
+}
+/* Container */
+.container {
+    width: 80%;
+    height: auto;
+    margin: 40px auto;
+}
+
+.container h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.container form {
+    margin: auto;
+    width: 80%;
+}
+
+.remove-tweet {
+    text-align: right;
+    right: 0;
+    color: #f00;
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tweet-text {
+    font-size: 14px;
+    padding: 5px;
+}
+
+.container form textarea {
+    width: 100%;
+    border: 1px solid #42d1d1;
+    border-radius: 5px;
+    height: 70px;
+}
+
+.container form input.btn-submit {
+    border-width: 0;
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    background: #42d1d1;
+    color: #efefef;
+    cursor: pointer;
+}
+
+.row {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "col-6 col-6-2nd"
+        ;
+}
+
+.col-6 {
+    grid-area: col-6;
+}
+
+.col-6-2nd {
+    grid-area: col-6-2nd;
+}
+
+.col-6-2nd h3 {
+    text-align: center;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 575.98px) {
+    .row {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "col-6"
+            "col-6-2nd"
+            ;
+    }
+    .col-6-2nd h3 {
+        text-align: center;
+        padding: 10px;
+    }
+}
