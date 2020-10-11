@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: block;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #bababa;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 50px auto;
+    background: #fff;
+
+}
+
+body {
+    background: #efefef;
+}
+
+/* universal row and columns */
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.col-6 {
+    grid-column: auto / span 6;
+}
+
+.col-6 p {
+    text-align: center;
+    font-family: sans-serif;
+    color: #bababa;
+}
+
+/* form styles */
+
+.myForm div {
+    width: 90%;
+    margin: 10px auto;
+    color: #bababa;
+}
+
+.myForm input {
+    color: #bababa;
+    display: block;
+    text-indent: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.myForm button {
+    cursor: pointer;
+    color: #efefef;
+    border-radius: 5px;
+    padding: 7px;
+    background: #42d1d1;
+    border-width: 0pt;
+}
+
+/* input placeholder styles */
+.myForm input::-webkit-input-placeholder{
+    color: #bababa;
+}
+
+/* error styles */
+div.error {
+    width: 80%;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    background: #ffbcbc;
+}
+
+.error p {
+    padding: 5px;
+    color: #fff;
+}
+
+/* Result styles */
+.result {
+    width: 90%;
+    margin: 10px auto;
+    color: #bababa;
+}
+
+.result p {
+    margin-top: 5px;
+    text-align: left;
+    font-size: 13px;
+    padding: 5px;
+    border: 1px solid #bababa;
+    border-radius: 5px;
+}
+
+
+.result p span {
+    background: #42d1d1;
+    color: #efefef;
+    font-size: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    float: right;
+}
+
+/* budgets styles */
+.budget p {
+    text-align: left;
+    padding: 10px;
+}
+
+.budget {
+    margin-top: 32px;
+}
+
+.initBudget, .leftBudget {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.initBudget {
+    background: rgb(190, 190, 255);
+    border-radius: 5px;
+}
+
+.initBudget p {
+    color: #1919f8;
+}
+
+.leftBudget {
+    background: #c2f7c2;
+    border-radius: 5px;
+}
+
+.leftBudget p{
+    color: #007900;
+}
+
+.leftBudgetYellow {
+    width: 90%;
+    background: #fffebb;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.leftBudgetYellow p{
+    color: #a5a800;
+}
+
+.leftBudgetRed {
+    width: 90%;
+    background: #f5a5a5;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+
+.leftBudgetRed p{
+    color: #b10505;
+}
+
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 575.98px) {
+    /* col-6 responsivess */
+    .col-6 {
+        grid-column: auto / span 12;
+    }
+}
